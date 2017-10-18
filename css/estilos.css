@@ -1,0 +1,120 @@
+html {
+  font-size: 15px; }
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #191919;
+  background: #E5E5E5; }
+
+.encabezado {
+  background: url("../images/PortadaMac.jpg") no-repeat center top;
+  color: #fff;
+  height: 100vh;
+  background-size: cover;
+  background-attachment: fixed !important;
+  display: flex;
+  flex-direction: column; }
+
+.encabezado .info-encabezado {
+  flex: 1 1 auto;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap; }
+
+.encabezado .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.encabezado .container .foto {
+  background: url("../images/foto.jpeg") no-repeat center, linear-gradient(#88653a, #968979);
+  flex: 1 1 auto;
+  margin: 2rem auto .1rem auto;
+  width: 12rem;
+  height: 12rem;
+  background-size: contain;
+  border-radius: 50%; }
+
+.encabezado .container h3 {
+  flex: 1 1 auto;
+  margin: 2rem auto 1rem auto;
+  text-align: center; }
+
+.encabezado .container p {
+  flex: 1 1 auto;
+  margin: 0rem auto 1rem auto;
+  text-align: center; }
+
+.encabezado .container .bcurriculum {
+  flex: 1 1 auto;
+  margin: 1.9rem auto 1rem auto; }
+
+.info-encabezado .container .bcurriculum:hover,
+.info-encabezado .container .bcurriculum:active,
+.info-encabezado .container .bcurriculum:focus,
+.info-encabezado .container .bcurriculum:visited {
+  background: #2E10B2; }
+
+/*******************************************
+SECCION DATOS PERSONALES Y CONTACTO
+*******************************************/
+.titulos {
+  color: #2E10B2; }
+
+.datos-personales .container .subtitulos {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-top: 1.5rem; }
+
+.datos-personales .container .row {
+  justify-content: center; }
+
+.seccion {
+  border: 3px solid #E5E5E5;
+  background: #fbfbfb;
+  padding: .8rem .4rem .8rem .4rem;
+  margin-top: .4rem; }
+
+.seccion a:hover {
+  text-decoration: none; }
+
+.datos-personales .container .subs {
+  display: flex;
+  align-items: center;
+  margin: .6rem 0; }
+
+.datos-personales .container .subs p {
+  flex: 1;
+  margin: 0; }
+
+.datos-personales .container .subs .fa {
+  font-size: .9rem;
+  background: #2E10B2;
+  border-radius: 50%;
+  height: 1.4rem;
+  width: 1.4rem;
+  line-height: 1.4rem;
+  color: #fff;
+  text-align: center;
+  margin-right: .4rem;
+  flex: 0 1 auto;
+  transition: all .7s ease; }
+
+.datos-personales .container .subs:hover .fa {
+  background: #fff;
+  color: #2E10B2;
+  border: 1px solid #2E10B2; }
+
+/*******************************************
+SECCION EXPERIENCIA LABORAL
+*******************************************/
+@media (min-width: 479px) {
+  .encabezado .container .foto {
+    margin: 2rem auto 1.4rem auto;
+    width: 11rem;
+    height: 11rem; }
+
+  .encabezado .container .bcurriculum {
+    margin-top: .4rem; } }
+
+/*# sourceMappingURL=estilos.css.map */
