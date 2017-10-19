@@ -71,7 +71,7 @@ SECCION DATOS PERSONALES Y CONTACTO
 
 .seccion {
   border: 3px solid #E5E5E5;
-  border-radius: 20px;
+  border-radius: 15px;
   background: #fbfbfb;
   padding: .3rem auto .3rem auto;
   margin-top: .4rem; }
@@ -146,10 +146,32 @@ SOFTWARES Y LENGUAJES
 .progress-completed {
   font-size: 0.8rem; }
 
-.conocimientos-informaticos .tarjeta {
+.conocimientos-informaticos .tarjeta,
+.conocimientos-ventas .tarjeta {
   border: 3px solid #E5E5E5;
   border-radius: 5px;
   background: #FFFFFF; }
+
+.conocimientos-ventas ul {
+  padding-left: 0;
+  list-style: none; }
+
+.conocimientos-ventas .tarjeta li::before {
+  content: "\f213";
+  font-family: FontAwesome;
+  font-size: 1.3rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  opacity: .5;
+  position: relative;
+  left: 0;
+  color: #2E10B2;
+  font-weight: bold; }
+
+.conocimientos-ventas .tarjeta li::before:hover {
+  border: 1px solid #2E10B2;
+  color: #fff;
+  background: #2E10B2; }
 
 @media (min-width: 479px) {
   .encabezado .container .foto {

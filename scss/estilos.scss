@@ -84,7 +84,7 @@ SECCION DATOS PERSONALES Y CONTACTO
 }
 .seccion{
 	border: 3px solid $secundario;
-	border-radius:20px;
+	border-radius:15px;
     background: $fondo;
     padding: .3rem auto .3rem auto;
     margin-top: .4rem;
@@ -160,13 +160,35 @@ SOFTWARES Y LENGUAJES
 .progress-type { top: 1px } 
 .progress-completed { font-size: .8rem } 
 
-.conocimientos-informaticos .tarjeta{
+.conocimientos-informaticos .tarjeta,
+.conocimientos-ventas .tarjeta{
 	border: 3px solid $secundario;
 	border-radius: 5px;
 	background: #FFFFFF;
 }
 
+.conocimientos-ventas ul{ //PSEUDO CLASE  
+	padding-left: 0;
+	list-style: none;
+}
 
+.conocimientos-ventas .tarjeta li::before{ //PSEUDO CLASE  
+	content: "\f213"; //UNICODE DE FONAWESOME
+	font-family: FontAwesome;//FUENTE
+	font-size: 1.3rem;
+	margin-left: 1rem;
+	margin-right: 1rem;
+	opacity: .5;
+	position: relative;
+	left: 0;
+	color:$principal;
+	font-weight: bold;
+}
+.conocimientos-ventas .tarjeta li::before:hover{ //PSEUDO CLASE  
+	border: 1px solid $principal;
+	color: #fff;
+	background: $principal;
+}
 
 
 
