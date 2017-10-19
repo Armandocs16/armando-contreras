@@ -12,23 +12,55 @@ body {
   height: 100vh;
   background-size: cover;
   background-attachment: fixed !important;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column; }
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column; }
 
 .encabezado .info-encabezado {
-  flex: 1 1 auto;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 auto;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  flex-wrap: wrap; }
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
 
 .encabezado .container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center; }
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
 
 .encabezado .container .foto {
+  background: url("../images/foto.jpeg") no-repeat center, -webkit-linear-gradient(#88653a, #968979);
   background: url("../images/foto.jpeg") no-repeat center, linear-gradient(#88653a, #968979);
-  flex: 1 1 auto;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 auto;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
   margin: 2rem auto .1rem auto;
   width: 12rem;
   height: 12rem;
@@ -36,17 +68,26 @@ body {
   border-radius: 50%; }
 
 .encabezado .container h3 {
-  flex: 1 1 auto;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 auto;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
   margin: 2rem auto 1rem auto;
   text-align: center; }
 
 .encabezado .container p {
-  flex: 1 1 auto;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 auto;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
   margin: 0rem auto 1rem auto;
   text-align: center; }
 
 .encabezado .container .bcurriculum {
-  flex: 1 1 auto;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 auto;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
   margin: 1.9rem auto 1rem auto; }
 
 .info-encabezado .container .bcurriculum:hover,
@@ -67,7 +108,10 @@ SECCION DATOS PERSONALES Y CONTACTO
   margin-top: 1.5rem; }
 
 .datos-personales .container .row {
-  justify-content: center; }
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
 
 .seccion {
   border: 3px solid #E5E5E5;
@@ -80,12 +124,21 @@ SECCION DATOS PERSONALES Y CONTACTO
   text-decoration: none; }
 
 .datos-personales .container .subs {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: .6rem 0; }
 
 .datos-personales .container .subs p {
-  flex: 1;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   margin: 0; }
 
 .datos-personales .container .subs .fa {
@@ -98,8 +151,12 @@ SECCION DATOS PERSONALES Y CONTACTO
   color: #fff;
   text-align: center;
   margin-right: .4rem;
-  flex: 0 1 auto;
-  transition: all .7s ease; }
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 1 auto;
+      -ms-flex: 0 1 auto;
+          flex: 0 1 auto;
+  -webkit-transition: all .7s ease;
+          transition: all .7s ease; }
 
 .datos-personales .container .subs:hover .fa {
   background: #fff;
