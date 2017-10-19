@@ -32,6 +32,7 @@ body{
 	display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items:center;
 }
 
 .encabezado .container .foto{
@@ -67,8 +68,10 @@ body{
 /*******************************************
 SECCION DATOS PERSONALES Y CONTACTO
 *******************************************/
-.datos-personales{
-    
+.datos-personales .container{
+    //flex-direction: column;
+    //justify-content: center;
+    //align-items: center;
 }
 .titulos{
 	color: $principal;
@@ -78,16 +81,22 @@ SECCION DATOS PERSONALES Y CONTACTO
 	font-size: 1.2rem;
 	font-weight: 600;
 	margin-top: 1.5rem;
+	flex: 0 1 auto;
 }
 .datos-personales .container .row{
-	justify-content: center;
+	//justify-content: center;
 }
 .seccion{
+	//flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
 	border: 3px solid $secundario;
 	border-radius:15px;
     background: $fondo;
-    padding: .3rem auto .3rem auto;
+    //padding: .3rem auto .3rem auto;
     margin-top: .4rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 
 }
 .seccion a:hover{
@@ -95,8 +104,8 @@ SECCION DATOS PERSONALES Y CONTACTO
 }
 .datos-personales .container .subs{
 	display: flex;
-	align-items:center;
-	margin: .6rem 0;
+    align-items: center;
+    margin: 0.4rem 0;
 }
 .datos-personales .container .subs p{
 	flex:1;
