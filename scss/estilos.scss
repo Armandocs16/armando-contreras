@@ -75,6 +75,7 @@ SECCION DATOS PERSONALES Y CONTACTO
 }
 .titulos{
 	color: $principal;
+	font-size: 1.6rem;
 }
 
 .datos-personales .container .subtitulos{
@@ -102,7 +103,7 @@ SECCION DATOS PERSONALES Y CONTACTO
 .seccion a:hover{
 	text-decoration: none;
 }
-.datos-personales .container .subs{
+.subs{
 	display: flex;
     align-items: center;
     margin: 0.4rem 0;
@@ -111,20 +112,20 @@ SECCION DATOS PERSONALES Y CONTACTO
 	flex:1;
 	margin: 0;
 }
-.datos-personales .container .subs .fa{
-	font-size: .9rem;
-    background:$principal;
+.subs .fa{
+	 font-size: 1rem;
+    background: #2E10B2;
     border-radius: 50%;
-    height: 1.4rem;
-    width: 1.4rem;
-    line-height: 1.4rem;
+    height: 1.5rem;
+    width: 1.5rem;
+    line-height: 1.5rem;
     color: #fff;
     text-align: center;
-    margin-right: .4rem;
+    margin-right: .6rem;
     flex: 0 1 auto;
     transition: all .7s ease;
 }
-.datos-personales .container .subs:hover .fa{
+.subs:hover .fa{
     background: #fff;
     color: $principal;
     border: 1px solid $principal;
@@ -139,6 +140,18 @@ SECCION EXPERIENCIA LABORAL
 	color: #007bff;
     text-decoration: none;
     background-color: transparent;
+}
+.experiencia1 h3::before,
+.experiencia2 h3::before,
+.experiencia3 h3::before{
+	content: "\f0b1"; //UNICODE DE FONAWESOME
+	font-family: FontAwesome;//FUENTE
+	font-size: 1.3rem;
+	margin-right: .5rem;
+	position: relative;
+	left: 0;
+	color:#007bff;
+
 }
 
 /*******************************************
@@ -200,7 +213,45 @@ SOFTWARES Y LENGUAJES
 }
 
 
+/**************************************
+SECCIOM EXTRAS
+**************************************/
+//Se utilizan las clases ya existentes
 
+/**************************************
+SECCIOM PIE DE PAGINA
+**************************************/
+.pie-de-pagina{
+	background: $texto;
+	color: #fff;
+	text-align: center;
+	font-size: .9rem;
+	margin-top: .4rem;
+	height: 6rem;
+}
+.pie-de-pagina .redes-sociales{
+	display: flex;
+	justify-content: center;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.pie-de-pagina .redes-sociales a{
+	color: #fff;
+	font-size: 2rem;
+	margin: 0 1.3rem;
+	opacity: .7;
+	transition: all .5s ease;
+}
+.pie-de-pagina .redes-sociales a:hover{
+	opacity: 1;
+}
+
+
+
+/**************************************
+INICIAN LAS MEDIA QUERYS
+**************************************/
 
 @media (min-width: 479px) {
 .encabezado .container .foto{
@@ -212,4 +263,3 @@ SOFTWARES Y LENGUAJES
 	margin-top: .4rem;
 }
 }
-
