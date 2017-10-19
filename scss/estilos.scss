@@ -1,4 +1,3 @@
-
 $texto:#191919;
 $principal: #2E10B2;
 $secundario:#E5E5E5;
@@ -85,8 +84,9 @@ SECCION DATOS PERSONALES Y CONTACTO
 }
 .seccion{
 	border: 3px solid $secundario;
+	border-radius:20px;
     background: $fondo;
-    padding: .8rem .4rem .8rem .4rem;
+    //padding: .8rem .4rem .8rem .4rem;
     margin-top: .4rem;
 
 }
@@ -132,9 +132,39 @@ SECCION EXPERIENCIA LABORAL
     background-color: transparent;
 }
 
+/*******************************************
+SOFTWARES Y LENGUAJES
+*******************************************/
+ .progress {
+    position: relative;
+	height: 1rem;
+	margin: 1.5rem 0;
+}
+.progress > .progress-type {
+	position: absolute;
+	left: 0rem;
+	font-weight: 800;
+    font-size:.8rem;
+	padding: 0 .5rem 0 .5rem;
+	color: #FFF;
+	background-color: rgba(25, 25, 25, 0.2);
+}
+.progress > .progress-completed {
+	position: absolute;
+	right: 0rem;
+	font-weight: 800;
+    color: #000;
+	padding: 0rem .7rem 1px;
+}
 
+.progress-type { top: 1px } 
+.progress-completed { font-size: .8rem } 
 
-
+.conocimientos-informaticos .tarjeta{
+	border: 3px solid $secundario;
+	border-radius: 5px;
+	background: #FFFFFF;
+}
 
 
 
