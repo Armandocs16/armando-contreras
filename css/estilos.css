@@ -12,87 +12,42 @@ body {
   height: 100vh;
   background-size: cover;
   background-attachment: fixed !important;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column; }
+  flex-direction: column; }
 
 .encabezado .info-encabezado {
-  -webkit-box-flex: 1;
-  -webkit-flex: 1 1 auto;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
+  flex: 1 1 auto;
   display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap; }
+  align-items: center;
+  flex-wrap: wrap; }
 
-.encabezado .container {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center; }
+.encabezado .container .row {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
 
-.encabezado .container .foto {
-  background: url("../images/foto.jpeg") no-repeat center, -webkit-linear-gradient(#88653a, #968979);
+.encabezado .container .row .foto {
   background: url("../images/foto.jpeg") no-repeat center, linear-gradient(#88653a, #968979);
-  -webkit-box-flex: 1;
-  -webkit-flex: 1 1 auto;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
-  margin: 2rem auto .1rem auto;
+  flex: 1 1 auto;
+  margin: auto;
   width: 12rem;
   height: 12rem;
   background-size: contain;
   border-radius: 50%; }
 
-.encabezado .container h3 {
-  -webkit-box-flex: 1;
-  -webkit-flex: 1 1 auto;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
-  margin: 2rem auto 1rem auto;
+.encabezado .container .row h3 {
+  flex: 1 1 auto;
+  margin: 2rem auto 2rem auto;
   text-align: center; }
 
-.encabezado .container p {
-  -webkit-box-flex: 1;
-  -webkit-flex: 1 1 auto;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
+.encabezado .container .row p {
+  flex: 1 1 auto;
   margin: 0rem auto 1rem auto;
   text-align: center; }
 
-.encabezado .container .bcurriculum {
-  -webkit-box-flex: 1;
-  -webkit-flex: 1 1 auto;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
-  margin: 1.9rem auto 1rem auto; }
+.encabezado .container .row .bcurriculum {
+  flex: 1 1 auto;
+  margin: 3rem auto 1rem auto; }
 
 .info-encabezado .container .bcurriculum:hover,
 .info-encabezado .container .bcurriculum:active,
@@ -111,21 +66,11 @@ SECCION DATOS PERSONALES Y CONTACTO
   font-size: 1.2rem;
   font-weight: 600;
   margin-top: 1.5rem;
-  -webkit-box-flex: 0;
-  -webkit-flex: 0 1 auto;
-      -ms-flex: 0 1 auto;
-          flex: 0 1 auto; }
+  flex: 0 1 auto; }
 
 .seccion {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   border: 3px solid #E5E5E5;
   border-radius: 15px;
   background: #fbfbfb;
@@ -137,21 +82,12 @@ SECCION DATOS PERSONALES Y CONTACTO
   text-decoration: none; }
 
 .subs {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   margin: 0.4rem 0; }
 
 .datos-personales .container .subs p {
-  -webkit-box-flex: 1;
-  -webkit-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  flex: 1;
   margin: 0; }
 
 .subs .fa {
@@ -164,12 +100,8 @@ SECCION DATOS PERSONALES Y CONTACTO
   color: #fff;
   text-align: center;
   margin-right: .6rem;
-  -webkit-box-flex: 0;
-  -webkit-flex: 0 1 auto;
-      -ms-flex: 0 1 auto;
-          flex: 0 1 auto;
-  -webkit-transition: all .7s ease;
-          transition: all .7s ease; }
+  flex: 0 1 auto;
+  transition: all .7s ease; }
 
 .subs:hover .fa {
   background: #fff;
@@ -179,6 +111,10 @@ SECCION DATOS PERSONALES Y CONTACTO
 /*******************************************
 SECCION EXPERIENCIA LABORAL
 *******************************************/
+.experiencia1,
+.experiencia2 {
+  border-bottom: 0.1rem solid #E5E5E5; }
+
 .experiencia1 h3 a,
 .experiencia2 h3 a,
 .experiencia3 h3 {
@@ -265,18 +201,12 @@ SECCIOM PIE DE PAGINA
   color: #fff;
   text-align: center;
   font-size: .9rem;
-  margin-top: .4rem;
+  margin-top: .8rem;
   height: 6rem; }
 
 .pie-de-pagina .redes-sociales {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   list-style: none;
   margin: 0;
   padding: 0; }
@@ -286,8 +216,7 @@ SECCIOM PIE DE PAGINA
   font-size: 2rem;
   margin: 0 1.3rem;
   opacity: .7;
-  -webkit-transition: all .5s ease;
-          transition: all .5s ease; }
+  transition: all .5s ease; }
 
 .pie-de-pagina .redes-sociales a:hover {
   opacity: 1; }
@@ -295,13 +224,25 @@ SECCIOM PIE DE PAGINA
 /**************************************
 INICIAN LAS MEDIA QUERYS
 **************************************/
-@media (min-width: 479px) {
-  .encabezado .container .foto {
+@media (min-width: 480px) {
+  .encabezado .container .row h3 {
+    margin: 1rem auto; }
+
+  .encabezado .container .row p {
+    margin: 0rem auto auto auto; }
+
+  .encabezado .container .row .bcurriculum {
+    margin: 1rem auto auto auto; } }
+/* @media (min-width: 479px) {
+.encabezado .container .foto{
     margin: 2rem auto 1.4rem auto;
     width: 11rem;
-    height: 11rem; }
-
-  .encabezado .container .bcurriculum {
-    margin-top: .4rem; } }
+    height: 11rem;
+   }
+   .encabezado .container .bcurriculum{
+	margin-top: .4rem;
+}
+}
+ */
 
 /*# sourceMappingURL=estilos.css.map */
