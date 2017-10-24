@@ -1,12 +1,31 @@
 html {
-  font-size: 15px; }
+  font-size: 13px; }
 
 body {
   font-family: 'Open Sans', sans-serif;
   color: #191919;
   background: #E5E5E5; }
 
+.contenedor-flex {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+
+.contenedor-flex .sec {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 0 100%;
+      -ms-flex: 1 0 100%;
+          flex: 1 0 100%; }
+
 .encabezado {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 auto;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
   background: url("../images/PortadaMac.jpg") no-repeat center top;
   color: #fff;
   height: 100vh;
@@ -24,9 +43,9 @@ body {
 
 .encabezado .info-encabezado {
   -webkit-box-flex: 1;
-  -webkit-flex: 1 1 auto;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
+  -webkit-flex: 1 1 100%;
+      -ms-flex: 1 1 100%;
+          flex: 1 1 100%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -40,6 +59,17 @@ body {
           flex-wrap: wrap; }
 
 .encabezado .container .row {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+.encabezado .container .row .portada {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
@@ -72,7 +102,7 @@ body {
   -webkit-flex: 1 1 auto;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
-  margin: 2rem auto 2rem auto;
+  margin: 2rem auto 1rem auto;
   text-align: center; }
 
 .encabezado .container .row p {
@@ -80,7 +110,7 @@ body {
   -webkit-flex: 1 1 auto;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
-  margin: 0rem auto 1rem auto;
+  margin: 0rem auto auto auto;
   text-align: center; }
 
 .encabezado .container .row .bcurriculum {
@@ -88,7 +118,7 @@ body {
   -webkit-flex: 1 1 auto;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
-  margin: 3rem auto 1rem auto; }
+  margin: 3rem auto auto auto; }
 
 .info-encabezado .container .bcurriculum:hover,
 .info-encabezado .container .bcurriculum:active,
@@ -99,14 +129,20 @@ body {
 /*******************************************
 SECCION DATOS PERSONALES Y CONTACTO
 *******************************************/
+.datos-personales {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 100%;
+      -ms-flex: 1 1 100%;
+          flex: 1 1 100%; }
+
 .titulos {
   color: #2E10B2;
   font-size: 1.6rem; }
 
-.datos-personales .container .subtitulos {
-  font-size: 1.2rem;
+.subtitulos {
+  font-size: 1.1rem;
   font-weight: 600;
-  margin-top: 1.5rem;
+  margin-top: .6rem;
   -webkit-box-flex: 0;
   -webkit-flex: 0 1 auto;
       -ms-flex: 0 1 auto;
@@ -123,7 +159,7 @@ SECCION DATOS PERSONALES Y CONTACTO
       -ms-flex-direction: column;
           flex-direction: column;
   border: 3px solid #E5E5E5;
-  border-radius: 15px;
+  border-radius: 5px;
   background: #fbfbfb;
   margin-top: .4rem;
   padding-top: 1rem;
@@ -172,9 +208,55 @@ SECCION DATOS PERSONALES Y CONTACTO
   color: #2E10B2;
   border: 1px solid #2E10B2; }
 
+.subs .fa-phone {
+  background: #13d61e; }
+
+.subs:hover .fa-phone {
+  background: #fff;
+  color: #13d61e;
+  border: 1px solid #13d61e; }
+
+.subs .fa-envelope-o {
+  background: #2496f6; }
+
+.subs:hover .fa-envelope-o {
+  background: #fff;
+  color: #2496f6;
+  border: 1px solid #2496f6; }
+
+.subs .fa-skype {
+  background: #00aff0; }
+
+.subs:hover .fa-skype {
+  background: #fff;
+  color: #00aff0;
+  border: 1px solid #00aff0; }
+
+.subs .fa-home {
+  background: #111111; }
+
+.subs:hover .fa-home {
+  background: #fff;
+  color: #111111;
+  border: 1px solid #111111; }
+
+.subs .fa-university {
+  background: red; }
+
+.subs:hover .fa-university {
+  background: #fff;
+  color: red;
+  border: 1px solid red; }
+
 /*******************************************
 SECCION EXPERIENCIA LABORAL
 *******************************************/
+.experiencias {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 100%;
+      -ms-flex: 1 1 100%;
+          flex: 1 1 100%; }
+
 .experiencia1,
 .experiencia2 {
   border-bottom: 0.1rem solid #E5E5E5; }
@@ -200,6 +282,12 @@ SECCION EXPERIENCIA LABORAL
 /*******************************************
 SOFTWARES Y LENGUAJES
 *******************************************/
+.software {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 100%;
+      -ms-flex: 1 1 100%;
+          flex: 1 1 100%; }
+
 .progress {
   position: relative;
   height: 1rem;
@@ -227,10 +315,25 @@ SOFTWARES Y LENGUAJES
 .progress-completed {
   font-size: 0.8rem; }
 
+.conocimientos-informaticos {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+
+.conocimientos-informaticos .temp {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 100%;
+      -ms-flex: 1 1 100%;
+          flex: 1 1 100%; }
+
 .conocimientos-informaticos .tarjeta,
 .conocimientos-ventas .tarjeta {
   border: 3px solid #E5E5E5;
-  border-radius: 5px;
+  border-radius: 3px;
   background: #FFFFFF; }
 
 .conocimientos-ventas ul {
@@ -261,6 +364,10 @@ SECCIOM EXTRAS
 SECCIOM PIE DE PAGINA
 **************************************/
 .pie-de-pagina {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 100%;
+      -ms-flex: 1 1 100%;
+          flex: 1 1 100%;
   background: #191919;
   color: #fff;
   text-align: center;
@@ -295,25 +402,222 @@ SECCIOM PIE DE PAGINA
 /**************************************
 INICIAN LAS MEDIA QUERYS
 **************************************/
-@media (min-width: 480px) {
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  .encabezado .container .row .foto {
+    margin: auto;
+    width: 11rem;
+    height: 11rem; }
+
   .encabezado .container .row h3 {
-    margin: 1rem auto; }
+    margin: 1rem auto .3rem auto; }
 
   .encabezado .container .row p {
     margin: 0rem auto auto auto; }
 
   .encabezado .container .row .bcurriculum {
-    margin: 1rem auto auto auto; } }
-/* @media (min-width: 479px) {
-.encabezado .container .foto{
-    margin: 2rem auto 1.4rem auto;
-    width: 11rem;
-    height: 11rem;
-   }
-   .encabezado .container .bcurriculum{
-	margin-top: .4rem;
-}
-}
- */
+    margin: 1.4rem auto auto auto; } }
+@media (min-width: 768px) {
+  .conocimientos-informaticos .temp {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 1 46%;
+        -ms-flex: 0 1 46%;
+            flex: 0 1 46%; }
+
+  .conocimientos-informaticos .tarjeta,
+  .conocimientos-ventas .tarjeta {
+    min-height: 11rem; }
+
+  .conocimientos-ventas {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+
+  .conocimientos-ventas div {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 1 46%;
+        -ms-flex: 0 1 46%;
+            flex: 0 1 46%; }
+
+  .conocimientos-ventas .tarjeta {
+    min-height: 26rem; }
+
+  .conocimientos-ventas div:nth-child(1) {
+    margin-right: .4rem; }
+
+  .conocimientos-ventas div:nth-child(2) {
+    margin-left: .4rem; }
+
+  .extras .row {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+
+  .extras .seccion,
+  .datos-personales .seccion {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 0 46%;
+        -ms-flex: 1 0 46%;
+            flex: 1 0 46%; }
+
+  .extras .container .row > div:nth-child(1),
+  .datos-personales .container .row > div:nth-child(2) {
+    margin-right: .4rem; }
+
+  .extras .container .row > div:nth-child(2),
+  .datos-personales .container .row > div:nth-child(3) {
+    margin-left: .4rem; } }
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
+  .contenedor-flex {
+    width: 85%;
+    margin: 0 auto 0 auto; }
+
+  .encabezado {
+    position: fixed;
+    width: 85%;
+    z-index: 9999;
+    top: 0;
+    height: 10vh; }
+
+  .encabezado .container .row .foto,
+  .encabezado .container .row .bcurriculum {
+    display: none; }
+
+  .encabezado .container .portada h3,
+  .encabezado .container .portada p {
+    margin: auto auto auto 0; }
+
+  .contenedor-flex > div:nth-child(2) {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 0%;
+        -ms-flex: 1 1 0%;
+            flex: 1 1 0%;
+    -webkit-box-ordinal-group: 2;
+    -webkit-order: 1;
+        -ms-flex-order: 1;
+            order: 1;
+    margin-top: 11vh; }
+
+  .contenedor-flex > div:nth-child(3) {
+    -webkit-box-flex: 3;
+    -webkit-flex: 3 1 0%;
+        -ms-flex: 3 1 0%;
+            flex: 3 1 0%;
+    -webkit-box-ordinal-group: 3;
+    -webkit-order: 2;
+        -ms-flex-order: 2;
+            order: 2;
+    margin-top: 12vh; }
+
+  .contenedor-flex .pie-de-pagina {
+    -webkit-box-ordinal-group: 4;
+    -webkit-order: 3;
+        -ms-flex-order: 3;
+            order: 3; }
+
+  .conocimientos-informaticos .temp {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 1 30.33%;
+        -ms-flex: 0 1 30.33%;
+            flex: 0 1 30.33%; }
+
+  .datos-personales .container .row .foto {
+    background: url("../images/foto.jpeg") no-repeat center, -webkit-linear-gradient(#88653a, #968979);
+    background: url("../images/foto.jpeg") no-repeat center, linear-gradient(#88653a, #968979);
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 1 auto;
+        -ms-flex: 0 1 auto;
+            flex: 0 1 auto;
+    margin: 1rem auto auto auto;
+    width: 8rem;
+    height: 8rem;
+    background-size: contain;
+    border-radius: 50%; }
+
+  .experiencias .seccion {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+
+  .experiencias .titulos {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 100%;
+        -ms-flex: 1 1 100%;
+            flex: 1 1 100%; }
+
+  .experiencias .experiencia1,
+  .experiencias .experiencia2,
+  .experiencias .experiencia3 {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 100%;
+        -ms-flex: 1 1 100%;
+            flex: 1 1 100%;
+    margin-left: .2rem;
+    margin-right: .2rem;
+    border: 1px solid brown;
+    border-radius: 3px; }
+
+  .extras .container .row > div:nth-child(1),
+  .datos-personales .container .row > div:nth-child(2) {
+    margin-right: auto;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 1 100%;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%; }
+
+  .extras .container .row > div:nth-child(2),
+  .datos-personales .container .row > div:nth-child(3) {
+    margin-left: auto;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 1 100%;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%; }
+
+  .extras .container .row > div:nth-child(1) {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 1 0%;
+        -ms-flex: 0 1 0%;
+            flex: 0 1 0%;
+    padding-right: 0; }
+
+  .extras .container .row > div:nth-child(2) {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 0%;
+        -ms-flex: 1 1 0%;
+            flex: 1 1 0%;
+    padding-left: 0; }
+
+  #seccion {
+    background: transparent;
+    margin: auto;
+    margin-top: 0;
+    padding-top: 0;
+    padding-bottom: 0; }
+
+  .seccion {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    border: 3px solid #E5E5E5;
+    border-radius: 5px;
+    background: #fbfbfb; } }
 
 /*# sourceMappingURL=estilos.css.map */
