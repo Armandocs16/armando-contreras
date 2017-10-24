@@ -474,7 +474,7 @@ INICIAN LAS MEDIA QUERYS
   .extras .container .row > div:nth-child(2),
   .datos-personales .container .row > div:nth-child(3) {
     margin-left: .4rem; } }
-@media screen and (min-width: 880px) and (-webkit-min-device-pixel-ratio: 1) {
+@media (min-width: 880px) {
   .contenedor-flex {
     width: 85%;
     margin: 0 auto 0 auto; }

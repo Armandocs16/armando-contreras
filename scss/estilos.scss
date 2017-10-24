@@ -385,9 +385,7 @@ INICIAN LAS MEDIA QUERYS
 		margin-left: .4rem;
 	}
 }
-@media screen 
-  and (min-width: 880px) 
-  and (-webkit-min-device-pixel-ratio: 1) {		
+@media (min-width: 880px){		
 	.contenedor-flex{
 		width: 85%;
     	margin: 0 auto 0 auto;
