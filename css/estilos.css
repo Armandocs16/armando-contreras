@@ -402,7 +402,7 @@ SECCIOM PIE DE PAGINA
 /**************************************
 INICIAN LAS MEDIA QUERYS
 **************************************/
-@media only screen and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
   .encabezado .container .row .foto {
     margin: auto;
     width: 11rem;
@@ -416,7 +416,7 @@ INICIAN LAS MEDIA QUERYS
 
   .encabezado .container .row .bcurriculum {
     margin: 1.4rem auto auto auto; } }
-@media (min-width: 768px) {
+@media only screen and (min-width: 768px) {
   .conocimientos-informaticos .temp {
     -webkit-box-flex: 0;
     -webkit-flex: 0 1 46%;
@@ -474,7 +474,7 @@ INICIAN LAS MEDIA QUERYS
   .extras .container .row > div:nth-child(2),
   .datos-personales .container .row > div:nth-child(3) {
     margin-left: .4rem; } }
-@media (min-width: 880px) {
+@media only screen and (min-width: 880px) {
   .contenedor-flex {
     width: 85%;
     margin: 0 auto 0 auto; }

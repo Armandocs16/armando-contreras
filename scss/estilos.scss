@@ -321,6 +321,8 @@ SECCIOM PIE DE PAGINA
 INICIAN LAS MEDIA QUERYS
 **************************************/
 @media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px) 
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: landscape)
   {
@@ -339,7 +341,7 @@ INICIAN LAS MEDIA QUERYS
     margin: 1.4rem auto auto auto;
 	}
 }
-@media (min-width: 768px) {
+@media only screen and (min-width: 768px) {
 	//conocimientos
 	.conocimientos-informaticos .temp{
 		flex:0 1 46%;
@@ -385,7 +387,7 @@ INICIAN LAS MEDIA QUERYS
 		margin-left: .4rem;
 	}
 }
-@media (min-width: 880px){		
+@media only screen  and (min-width: 880px){		
 	.contenedor-flex{
 		width: 85%;
     	margin: 0 auto 0 auto;
