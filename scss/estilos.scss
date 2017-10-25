@@ -55,29 +55,29 @@ body{
     background-size: contain;
     border-radius: 50%;
 }
-.encabezado .container .row > div:nth-child(1) h3{
+.encabezado .container .row > div:nth-child(2) h3{
     margin: 2rem auto 1rem auto;
     text-align: center;	
 }
-.encabezado .container .row > div:nth-child(1) p{
+.encabezado .container .row > div:nth-child(2) p{
     margin: 0rem auto auto auto;
     text-align: center;	
 }
-.encabezado .container .row > div:nth-child(2) h1{
+.encabezado .container .row > div:nth-child(3) h1{
 	font-size: 1.1rem;
     text-align: center;
     margin-top: 1rem;
     padding: 0 .8rem;
 }
 
-.encabezado .container .row > div:nth-child(3) .bcurriculum{
+.encabezado .container .row > div:nth-child(4) .bcurriculum{
     margin: 3rem auto auto auto;
 }
 
-.info-encabezado .container > div:nth-child(3) .bcurriculum:hover,
-.info-encabezado .container > div:nth-child(3) .bcurriculum:active,
-.info-encabezado .container > div:nth-child(3) .bcurriculum:focus,
-.info-encabezado .container > div:nth-child(3) .bcurriculum:visited{
+.info-encabezado .container > div:nth-child(4) .bcurriculum:hover,
+.info-encabezado .container > div:nth-child(4) .bcurriculum:active,
+.info-encabezado .container > div:nth-child(4) .bcurriculum:focus,
+.info-encabezado .container > div:nth-child(4) .bcurriculum:visited{
 	background: $principal;
 }
 
@@ -327,8 +327,6 @@ SECCIOM PIE DE PAGINA
 INICIAN LAS MEDIA QUERYS
 **************************************/
 @media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 480px) 
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: landscape)
   {
@@ -337,21 +335,21 @@ INICIAN LAS MEDIA QUERYS
 	    width: 11rem;
 	    height: 11rem;
 	}
-	.encabezado .container .row > div:nth-child(1) h3 {
+	.encabezado .container .row > div:nth-child(2) h3 {
         margin: 1rem auto .3rem auto;
 	}
-	.encabezado .container .row > div:nth-child(1) p {
+	.encabezado .container .row > div:nth-child(2) p {
     margin: 0rem auto auto auto;
 	}
-	.encabezado .container .row > div:nth-child(3) .bcurriculum{
+	.encabezado .container .row > div:nth-child(4) .bcurriculum{
     margin: 1.4rem auto auto auto;
 	}
 }
 @media only screen and (min-width: 768px) {
 	
 	//Ordemanmiento de los div de la portada
-	.encabezado .container .row > div:nth-child(2) h1{
-		margin-top: 13rem;
+	.encabezado .container .row > div:nth-child(3) h1{
+    	margin: 3rem auto 1rem auto;
 		font-size: 1.3rem;
 	}
 
@@ -411,18 +409,21 @@ INICIAN LAS MEDIA QUERYS
 	    z-index: 9999;
 	    top: 0;
 		height: 10vh;
+		left: 0;
+	    right: 0;
+	    width: 100%;
 	}
 	.encabezado .container .row > div:nth-child(1) .foto,
-	.encabezado .container .row > div:nth-child(3) .bcurriculum{
+	.encabezado .container .row > div:nth-child(4) .bcurriculum{
 		display: none;
 	}
-	.encabezado .container .row > div:nth-child(1) h3, 
-	.encabezado .container .row > div:nth-child(1) p{
+	.encabezado .container .row > div:nth-child(2) h3, 
+	.encabezado .container .row > div:nth-child(2) p{
 		margin: auto auto auto 0;
 		text-align: left;
 	}
 //Ordemanmiento de los div de la portada
-	.encabezado .container .row > div:nth-child(2) h1{
+	.encabezado .container .row > div:nth-child(3) h1{
 		margin: auto auto auto 0;
 		font-size: 1.2rem;
 		text-align: left;
@@ -474,7 +475,6 @@ INICIAN LAS MEDIA QUERYS
 		flex: 1 1 100%;
 	    margin-left: .2rem;
 	    margin-right: .2rem;
-	    border: 1px solid brown;
 	    border-radius: 3px;
 	}
 	//Datos personales y Extras 
