@@ -7,157 +7,88 @@ body {
   background: #E5E5E5; }
 
 .contenedor-flex {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap; }
+  flex-wrap: wrap; }
 
 .contenedor-flex .sec {
-  -webkit-box-flex: 1;
-  -webkit-flex: 1 0 100%;
-      -ms-flex: 1 0 100%;
-          flex: 1 0 100%; }
+  flex: 1 0 100%; }
 
 .encabezado {
-  -webkit-box-flex: 1;
-  -webkit-flex: 1 1 auto;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
+  flex: 1 1 auto;
   background: url("../images/PortadaMac.jpg") no-repeat center top;
   color: #fff;
   height: 100vh;
   background-size: cover;
   background-attachment: fixed !important;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column; }
+  flex-direction: column; }
 
 .encabezado .info-encabezado {
-  -webkit-box-flex: 1;
-  -webkit-flex: 1 1 100%;
-      -ms-flex: 1 1 100%;
-          flex: 1 1 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
+  flex: 1 1 100%;
   display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap; }
+  align-items: center;
+  flex-wrap: wrap; }
 
+/* .encabezado .container .row{
+    flex-direction: column;
+} */
 .encabezado .container .row {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column; }
-
-.encabezado .container .row .portada {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center; }
+  justify-content: center;
+  align-items: center; }
 
-.encabezado .container .row .foto {
-  background: url("../images/foto.jpeg") no-repeat center, -webkit-linear-gradient(#88653a, #968979);
+/*ordenamientos interno del contenido de las cajas*/
+.encabezado .container .row > div:nth-child(1) .foto {
   background: url("../images/foto.jpeg") no-repeat center, linear-gradient(#88653a, #968979);
-  -webkit-box-flex: 1;
-  -webkit-flex: 1 1 auto;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
+  flex: 1 1 auto;
   margin: auto;
   width: 12rem;
   height: 12rem;
   background-size: contain;
   border-radius: 50%; }
 
-.encabezado .container .row h3 {
-  -webkit-box-flex: 1;
-  -webkit-flex: 1 1 auto;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
+.encabezado .container .row > div:nth-child(1) h3 {
   margin: 2rem auto 1rem auto;
   text-align: center; }
 
-.encabezado .container .row p {
-  -webkit-box-flex: 1;
-  -webkit-flex: 1 1 auto;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
+.encabezado .container .row > div:nth-child(1) p {
   margin: 0rem auto auto auto;
   text-align: center; }
 
-.encabezado .container .row .bcurriculum {
-  -webkit-box-flex: 1;
-  -webkit-flex: 1 1 auto;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
+.encabezado .container .row > div:nth-child(2) h1 {
+  font-size: 1.1rem;
+  text-align: center;
+  margin-top: 1rem;
+  padding: 0 .8rem; }
+
+.encabezado .container .row > div:nth-child(3) .bcurriculum {
   margin: 3rem auto auto auto; }
 
-.info-encabezado .container .bcurriculum:hover,
-.info-encabezado .container .bcurriculum:active,
-.info-encabezado .container .bcurriculum:focus,
-.info-encabezado .container .bcurriculum:visited {
+.info-encabezado .container > div:nth-child(3) .bcurriculum:hover,
+.info-encabezado .container > div:nth-child(3) .bcurriculum:active,
+.info-encabezado .container > div:nth-child(3) .bcurriculum:focus,
+.info-encabezado .container > div:nth-child(3) .bcurriculum:visited {
   background: #2E10B2; }
 
 /*******************************************
 SECCION DATOS PERSONALES Y CONTACTO
 *******************************************/
 .datos-personales {
-  -webkit-box-flex: 1;
-  -webkit-flex: 1 1 100%;
-      -ms-flex: 1 1 100%;
-          flex: 1 1 100%; }
+  flex: 1 1 100%; }
 
 .titulos {
-  color: #2E10B2;
-  font-size: 1.6rem; }
+  font-size: 1.2rem;
+  text-align: left; }
 
 .subtitulos {
   font-size: 1.1rem;
   font-weight: 600;
   margin-top: .6rem;
-  -webkit-box-flex: 0;
-  -webkit-flex: 0 1 auto;
-      -ms-flex: 0 1 auto;
-          flex: 0 1 auto; }
+  flex: 0 1 auto; }
 
 .seccion {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   border: 3px solid #E5E5E5;
   border-radius: 5px;
   background: #fbfbfb;
@@ -169,21 +100,12 @@ SECCION DATOS PERSONALES Y CONTACTO
   text-decoration: none; }
 
 .subs {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   margin: 0.4rem 0; }
 
 .datos-personales .container .subs p {
-  -webkit-box-flex: 1;
-  -webkit-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  flex: 1;
   margin: 0; }
 
 .subs .fa {
@@ -196,12 +118,8 @@ SECCION DATOS PERSONALES Y CONTACTO
   color: #fff;
   text-align: center;
   margin-right: .6rem;
-  -webkit-box-flex: 0;
-  -webkit-flex: 0 1 auto;
-      -ms-flex: 0 1 auto;
-          flex: 0 1 auto;
-  -webkit-transition: all .7s ease;
-          transition: all .7s ease; }
+  flex: 0 1 auto;
+  transition: all .7s ease; }
 
 .subs:hover .fa {
   background: #fff;
@@ -252,10 +170,7 @@ SECCION DATOS PERSONALES Y CONTACTO
 SECCION EXPERIENCIA LABORAL
 *******************************************/
 .experiencias {
-  -webkit-box-flex: 1;
-  -webkit-flex: 1 1 100%;
-      -ms-flex: 1 1 100%;
-          flex: 1 1 100%; }
+  flex: 1 1 100%; }
 
 .experiencia1,
 .experiencia2 {
@@ -283,10 +198,7 @@ SECCION EXPERIENCIA LABORAL
 SOFTWARES Y LENGUAJES
 *******************************************/
 .software {
-  -webkit-box-flex: 1;
-  -webkit-flex: 1 1 100%;
-      -ms-flex: 1 1 100%;
-          flex: 1 1 100%; }
+  flex: 1 1 100%; }
 
 .progress {
   position: relative;
@@ -316,19 +228,11 @@ SOFTWARES Y LENGUAJES
   font-size: 0.8rem; }
 
 .conocimientos-informaticos {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap; }
+  flex-wrap: wrap; }
 
 .conocimientos-informaticos .temp {
-  -webkit-box-flex: 1;
-  -webkit-flex: 1 1 100%;
-      -ms-flex: 1 1 100%;
-          flex: 1 1 100%; }
+  flex: 1 1 100%; }
 
 .conocimientos-informaticos .tarjeta,
 .conocimientos-ventas .tarjeta {
@@ -364,10 +268,7 @@ SECCIOM EXTRAS
 SECCIOM PIE DE PAGINA
 **************************************/
 .pie-de-pagina {
-  -webkit-box-flex: 1;
-  -webkit-flex: 1 1 100%;
-      -ms-flex: 1 1 100%;
-          flex: 1 1 100%;
+  flex: 1 1 100%;
   background: #191919;
   color: #fff;
   text-align: center;
@@ -376,14 +277,8 @@ SECCIOM PIE DE PAGINA
   height: 6rem; }
 
 .pie-de-pagina .redes-sociales {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   list-style: none;
   margin: 0;
   padding: 0; }
@@ -393,8 +288,7 @@ SECCIOM PIE DE PAGINA
   font-size: 2rem;
   margin: 0 1.3rem;
   opacity: .7;
-  -webkit-transition: all .5s ease;
-          transition: all .5s ease; }
+  transition: all .5s ease; }
 
 .pie-de-pagina .redes-sociales a:hover {
   opacity: 1; }
@@ -403,48 +297,38 @@ SECCIOM PIE DE PAGINA
 INICIAN LAS MEDIA QUERYS
 **************************************/
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
-  .encabezado .container .row .foto {
+  .encabezado .container .row > div:nth-child(1) .foto {
     margin: auto;
     width: 11rem;
     height: 11rem; }
 
-  .encabezado .container .row h3 {
+  .encabezado .container .row > div:nth-child(1) h3 {
     margin: 1rem auto .3rem auto; }
 
-  .encabezado .container .row p {
+  .encabezado .container .row > div:nth-child(1) p {
     margin: 0rem auto auto auto; }
 
-  .encabezado .container .row .bcurriculum {
+  .encabezado .container .row > div:nth-child(3) .bcurriculum {
     margin: 1.4rem auto auto auto; } }
 @media only screen and (min-width: 768px) {
+  .encabezado .container .row > div:nth-child(2) h1 {
+    margin-top: 13rem;
+    font-size: 1.3rem; }
+
   .conocimientos-informaticos .temp {
-    -webkit-box-flex: 0;
-    -webkit-flex: 0 1 46%;
-        -ms-flex: 0 1 46%;
-            flex: 0 1 46%; }
+    flex: 0 1 46%; }
 
   .conocimientos-informaticos .tarjeta,
   .conocimientos-ventas .tarjeta {
     min-height: 11rem; }
 
   .conocimientos-ventas {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center; }
+    flex-wrap: wrap;
+    justify-content: center; }
 
   .conocimientos-ventas div {
-    -webkit-box-flex: 0;
-    -webkit-flex: 0 1 46%;
-        -ms-flex: 0 1 46%;
-            flex: 0 1 46%; }
+    flex: 0 1 46%; }
 
   .conocimientos-ventas .tarjeta {
     min-height: 26rem; }
@@ -456,16 +340,11 @@ INICIAN LAS MEDIA QUERYS
     margin-left: .4rem; }
 
   .extras .row {
-    -webkit-flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap; }
+    flex-wrap: wrap; }
 
   .extras .seccion,
   .datos-personales .seccion {
-    -webkit-box-flex: 1;
-    -webkit-flex: 1 0 46%;
-        -ms-flex: 1 0 46%;
-            flex: 1 0 46%; }
+    flex: 1 0 46%; }
 
   .extras .container .row > div:nth-child(1),
   .datos-personales .container .row > div:nth-child(2) {
@@ -474,7 +353,7 @@ INICIAN LAS MEDIA QUERYS
   .extras .container .row > div:nth-child(2),
   .datos-personales .container .row > div:nth-child(3) {
     margin-left: .4rem; } }
-@media only screen and (min-width: 880px) {
+@media only screen and (min-width: 992px) {
   .contenedor-flex {
     width: 85%;
     margin: 0 auto 0 auto; }
@@ -486,55 +365,39 @@ INICIAN LAS MEDIA QUERYS
     top: 0;
     height: 10vh; }
 
-  .encabezado .container .row .foto,
-  .encabezado .container .row .bcurriculum {
+  .encabezado .container .row > div:nth-child(1) .foto,
+  .encabezado .container .row > div:nth-child(3) .bcurriculum {
     display: none; }
 
-  .encabezado .container .portada h3,
-  .encabezado .container .portada p {
-    margin: auto auto auto 0; }
+  .encabezado .container .row > div:nth-child(1) h3,
+  .encabezado .container .row > div:nth-child(1) p {
+    margin: auto auto auto 0;
+    text-align: left; }
+
+  .encabezado .container .row > div:nth-child(2) h1 {
+    margin: auto auto auto 0;
+    font-size: 1.2rem;
+    text-align: left; }
 
   .contenedor-flex > div:nth-child(2) {
-    -webkit-box-flex: 1;
-    -webkit-flex: 1 1 0%;
-        -ms-flex: 1 1 0%;
-            flex: 1 1 0%;
-    -webkit-box-ordinal-group: 2;
-    -webkit-order: 1;
-        -ms-flex-order: 1;
-            order: 1;
+    flex: 1 1 0%;
+    order: 1;
     margin-top: 11vh; }
 
   .contenedor-flex > div:nth-child(3) {
-    -webkit-box-flex: 3;
-    -webkit-flex: 3 1 0%;
-        -ms-flex: 3 1 0%;
-            flex: 3 1 0%;
-    -webkit-box-ordinal-group: 3;
-    -webkit-order: 2;
-        -ms-flex-order: 2;
-            order: 2;
+    flex: 3 1 0%;
+    order: 2;
     margin-top: 12vh; }
 
   .contenedor-flex .pie-de-pagina {
-    -webkit-box-ordinal-group: 4;
-    -webkit-order: 3;
-        -ms-flex-order: 3;
-            order: 3; }
+    order: 3; }
 
   .conocimientos-informaticos .temp {
-    -webkit-box-flex: 0;
-    -webkit-flex: 0 1 30.33%;
-        -ms-flex: 0 1 30.33%;
-            flex: 0 1 30.33%; }
+    flex: 0 1 30.33%; }
 
   .datos-personales .container .row .foto {
-    background: url("../images/foto.jpeg") no-repeat center, -webkit-linear-gradient(#88653a, #968979);
     background: url("../images/foto.jpeg") no-repeat center, linear-gradient(#88653a, #968979);
-    -webkit-box-flex: 0;
-    -webkit-flex: 0 1 auto;
-        -ms-flex: 0 1 auto;
-            flex: 0 1 auto;
+    flex: 0 1 auto;
     margin: 1rem auto auto auto;
     width: 8rem;
     height: 8rem;
@@ -542,28 +405,16 @@ INICIAN LAS MEDIA QUERYS
     border-radius: 50%; }
 
   .experiencias .seccion {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: row;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap; }
+    flex-direction: row;
+    flex-wrap: wrap; }
 
   .experiencias .titulos {
-    -webkit-box-flex: 1;
-    -webkit-flex: 1 1 100%;
-        -ms-flex: 1 1 100%;
-            flex: 1 1 100%; }
+    flex: 1 1 100%; }
 
   .experiencias .experiencia1,
   .experiencias .experiencia2,
   .experiencias .experiencia3 {
-    -webkit-box-flex: 1;
-    -webkit-flex: 1 1 100%;
-        -ms-flex: 1 1 100%;
-            flex: 1 1 100%;
+    flex: 1 1 100%;
     margin-left: .2rem;
     margin-right: .2rem;
     border: 1px solid brown;
@@ -572,31 +423,19 @@ INICIAN LAS MEDIA QUERYS
   .extras .container .row > div:nth-child(1),
   .datos-personales .container .row > div:nth-child(2) {
     margin-right: auto;
-    -webkit-box-flex: 0;
-    -webkit-flex: 0 1 100%;
-        -ms-flex: 0 1 100%;
-            flex: 0 1 100%; }
+    flex: 0 1 100%; }
 
   .extras .container .row > div:nth-child(2),
   .datos-personales .container .row > div:nth-child(3) {
     margin-left: auto;
-    -webkit-box-flex: 0;
-    -webkit-flex: 0 1 100%;
-        -ms-flex: 0 1 100%;
-            flex: 0 1 100%; }
+    flex: 0 1 100%; }
 
   .extras .container .row > div:nth-child(1) {
-    -webkit-box-flex: 0;
-    -webkit-flex: 0 1 0%;
-        -ms-flex: 0 1 0%;
-            flex: 0 1 0%;
+    flex: 0 1 0%;
     padding-right: 0; }
 
   .extras .container .row > div:nth-child(2) {
-    -webkit-box-flex: 1;
-    -webkit-flex: 1 1 0%;
-        -ms-flex: 1 1 0%;
-            flex: 1 1 0%;
+    flex: 1 1 0%;
     padding-left: 0; }
 
   #seccion {
@@ -607,15 +446,8 @@ INICIAN LAS MEDIA QUERYS
     padding-bottom: 0; }
 
   .seccion {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     border: 3px solid #E5E5E5;
     border-radius: 5px;
     background: #fbfbfb; } }
