@@ -77,8 +77,8 @@ body {
 
 /*ordenamientos interno del contenido de las cajas*/
 .encabezado .container .row > div:nth-child(1) .foto {
-  background: url("../images/foto.jpeg") no-repeat center, -webkit-linear-gradient(#88653a, #968979);
-  background: url("../images/foto.jpeg") no-repeat center, linear-gradient(#88653a, #968979);
+  background: url("../images/foto2.jpeg") no-repeat center, -webkit-linear-gradient(#fefad4, #e0d1a1);
+  background: url("../images/foto2.jpeg") no-repeat center, linear-gradient(#fefad4, #e0d1a1);
   -webkit-box-flex: 1;
   -webkit-flex: 1 1 auto;
       -ms-flex: 1 1 auto;
@@ -528,8 +528,8 @@ INICIAN LAS MEDIA QUERYS
             flex: 0 1 30.33%; }
 
   .datos-personales .container .row .foto {
-    background: url("../images/foto.jpeg") no-repeat center, -webkit-linear-gradient(#88653a, #968979);
-    background: url("../images/foto.jpeg") no-repeat center, linear-gradient(#88653a, #968979);
+    background: url("../images/foto2.jpeg") no-repeat center, -webkit-linear-gradient(#fefad4, #e0d1a1);
+    background: url("../images/foto2.jpeg") no-repeat center, linear-gradient(#fefad4, #e0d1a1);
     -webkit-box-flex: 0;
     -webkit-flex: 0 1 auto;
         -ms-flex: 0 1 auto;

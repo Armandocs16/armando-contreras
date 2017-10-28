@@ -47,7 +47,7 @@ body{
 /*ordenamientos interno del contenido de las cajas*/
 
 .encabezado .container .row > div:nth-child(1) .foto{
-	background: url('../images/foto.jpeg') no-repeat center, linear-gradient(#88653a, #968979);
+	background: url('../images/foto2.jpeg') no-repeat center, linear-gradient(#fefad4, #e0d1a1);
     flex: 1 1 auto;
     margin: auto;
     width: 12rem;
@@ -451,7 +451,7 @@ INICIAN LAS MEDIA QUERYS
 	}
 
 	.datos-personales .container .row .foto{
-		background: url('../images/foto.jpeg') no-repeat center, linear-gradient(#88653a, #968979);
+		background: url('../images/foto2.jpeg') no-repeat center, linear-gradient(#fefad4, #e0d1a1);
 	    flex: 0 1 auto;
 	    margin: 1rem auto auto auto;
 	    width: 8rem;
